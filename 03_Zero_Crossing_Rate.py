@@ -1,4 +1,4 @@
-# Extract the RMS of the audio signal.
+# Extract the ZCR of the audio signal.
 
 # 0.Setup Library
 import librosa
