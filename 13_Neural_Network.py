@@ -1,11 +1,11 @@
-# Nerual Network
+# Neural Network
 # 0.Environment build
 from torch import nn
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
 # 1.NN
-class AudioNerualNetwork(nn.Module):
+class AudioNeuralNetwork(nn.Module):
     def __init__(self):
         super().__init__()
         self.conv1 = nn.Conv2d(in_channels=10,out_channels=32,kernel_size=5,stride=1,padding=2)
@@ -31,7 +31,7 @@ class AudioNerualNetwork(nn.Module):
         return liner
 
 # 2.Instantiate the audio moulde class
-audio_test = AudioNerualNetwork()
+audio_test = AudioNeuralNetwork()
 print(audio_test)
 input_data = torch.Tensor(1,10,32,32)
 output_data = audio_test(input_data)
